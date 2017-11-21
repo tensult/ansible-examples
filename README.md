@@ -10,8 +10,8 @@
     ```
 
 ### [Passing data between playbooks](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-playbooks)
-* [input-set](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-playbooks/roles/input-set) sets fact **foo** to bar.
-* [input-get](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-playbooks/roles/input-get) gets fact **foo** using debug module.
+* [playbook1](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-playbooks/playbook1) sets fact **foo** to bar.
+* [playbook2](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-playbooks/playbook2) gets fact **foo** using debug module.
 * To run:
     ```
     cd pass-data-between-playbooks
