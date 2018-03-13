@@ -1,5 +1,13 @@
 # ansible-examples
 
+### [How to implement own module](https://github.com/tensult/ansible-examples/blob/master/own-module-example)
+* [library/test.sh](https://github.com/tensult/ansible-examples/blob/master/own-module-example/library/test.sh) contains a simple test module.
+* In [playbook.xml](https://github.com/tensult/ansible-examples/blob/master/own-module-example/playbook.yml), we are calling this module.
+* To run:
+    ```
+    cd own-module-example
+    ansible-playbook playbook.yml
+
 ### [Passing data between roles](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-roles)
 * [input-set](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-roles/roles/input-set) sets fact **foo** to bar.
 * [input-get](https://github.com/tensult/ansible-examples/blob/master/pass-data-between-roles/roles/input-get) gets fact **foo** using debug module.
