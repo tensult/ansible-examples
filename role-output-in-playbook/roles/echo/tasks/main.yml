@@ -1,0 +1,6 @@
+---
+- shell: echo  "test-echo"
+  register: role_output
+- set_fact:
+    output: "{{ output | combine({ output_name: role_output}) }}"
+

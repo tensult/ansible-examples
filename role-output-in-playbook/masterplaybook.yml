@@ -1,0 +1,14 @@
+---
+- hosts: local
+  tasks:
+    - set_fact: 
+        output: {}
+    - name: Execute echo role as tasks using include_role
+      include_role: 
+        name: echo
+      vars:
+        output_name: "echo_role"
+    - name: Print output
+      debug: 
+        var: output
+     
