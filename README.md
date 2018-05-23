@@ -26,7 +26,7 @@
     ansible-playbook masterplaybook.yml
     ```
 ### [Passing data between playbooks](https://github.com/tensult/ansible-examples/tree/master/role-output-in-playbook)
-* [masterplaybook](https://github.com/tensult/ansible-examples/blob/master/role-output-in-playbook/masterplaybook.yml) is the main playbook which is used to call a sample role whose output is stored in the variale "output".
+* [masterplaybook](https://github.com/tensult/ansible-examples/blob/master/role-output-in-playbook/masterplaybook.yml) is the main playbook which is used to call a sample role whose output is stored in the variable "output".
 * The sample role [echo](https://github.com/tensult/ansible-examples/tree/master/role-output-in-playbook/roles/echo) has a  [task defined](https://github.com/tensult/ansible-examples/blob/master/role-output-in-playbook/roles/echo/tasks/main.yml) which stores the output of the role into the variable in JSON format.
 * To run:
     ```
